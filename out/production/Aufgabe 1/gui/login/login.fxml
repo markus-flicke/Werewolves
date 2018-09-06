@@ -1,0 +1,27 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:controller="gui.login.LoginController" stylesheets="@login.css" styleClass="root"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets right="10" left="10"/>
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints prefWidth="80" maxWidth="80" halignment="RIGHT"/>
+        <ColumnConstraints hgrow="ALWAYS" halignment="LEFT"/>
+    </columnConstraints>
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="0">Server</Label>
+    <TextField GridPane.rowIndex="0" GridPane.columnIndex="1" fx:id="server"/>
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0">Port</Label>
+    <Spinner GridPane.rowIndex="1" GridPane.columnIndex="1" fx:id="port" editable="true"/>
+    <Label GridPane.rowIndex="2" GridPane.columnIndex="0">Password</Label>
+    <PasswordField GridPane.rowIndex="2" GridPane.columnIndex="1" fx:id="password"/>
+    <Separator GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="2"/>
+    <Label GridPane.rowIndex="4" GridPane.columnIndex="0">Username</Label>
+    <TextField GridPane.rowIndex="4" GridPane.columnIndex="1" fx:id="username"/>
+    <Label GridPane.rowIndex="5" GridPane.columnIndex="0">Nickname</Label>
+    <TextField GridPane.rowIndex="5" GridPane.columnIndex="1" fx:id="nickname"/>
+    <Button GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="2" fx:id="loginButton" text="Login"
+            onAction="#login"/>
+    <Label GridPane.rowIndex="8" GridPane.columnIndex="0" GridPane.columnSpan="2" fx:id="error" styleClass="error" />
+</GridPane>

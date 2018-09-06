@@ -13,6 +13,7 @@ import thinirc.exceptions.BuildException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class LoginController implements Initializable {
@@ -30,7 +31,8 @@ public class LoginController implements Initializable {
     private Button loginButton;
     @FXML
     private Label error;
-    private ThinIrcConnection thinIrcConnection;
+    private ThinIrcConnection connection;
+    ExecutorService threadPool = Executors.newFixedThreadPool(5);
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -59,30 +61,28 @@ public class LoginController implements Initializable {
      * The action when the login button is clicked
      */
     public void login() {
-        MyConnectionBuilder myConnectionBuilder = new MyConnectionBuilder();
-        String nick = nickname.getText();
-        myConnectionBuilder
-                .setNick(nick)
-                .setPassword(password.getText())
-                .setPort(port.getValue())
-                .setServer(server.getText())
-                .setSSL(false)
-                .setUser(username.getText());
-
-        Thread loginThread = new Thread(()-> {
-            try{
-                thinIrcConnection = myConnectionBuilder.build();
-            }catch(Exception e){
-                error.setText("Connection failed.");
+        threadPool.submit(() -> {
+            try {
+                connection = new MyConnectionBuilder()
+                        .setServer(server.getText())
+                        .setNick(nickname.getText())
+                        .setPassword(password.getText())
+                        .setPort(port.getValue())
+                        .setSSL(false)
+                        .setUser(username.getText())
+                        .build();
+            } catch (BuildException e) {
+                Platform.runLater(()->error.setText(e.getMessage()));
             }
-                Platform.runLater(() -> {
-                    try{
-                        Main.getInstance().openChatWindow(thinIrcConnection, nick);
-                    }catch(Exception e){
-                        throw new RuntimeException(e);
-                    }
-                });
+            Platform.runLater(() -> {
+                try{
+                    Main.getInstance().openChatWindow(connection, nickname.getText());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            });
         });
-        loginThread.start();
+
+
     }
 }
