@@ -19,7 +19,7 @@ public class MsgFilter implements MsgReceiver{
                 || cmd.equals(JOIN)
                 || cmd.equals(PART)
                 || (cmd.equals(PRIVMSG) && m.getPayload().startsWith("!vote"))){
-            switch (m.getHeader().getIrcCommand()){
+            switch (cmd){
                 case PRIVMSG:
                     System.out.println(m);
                     String sender = m.getPayload().split(" !")[0];

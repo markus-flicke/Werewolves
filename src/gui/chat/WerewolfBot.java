@@ -21,12 +21,10 @@ import thinirc.client.ThinIrcConnection;
 import thinirc.exceptions.BuildException;
 import thinirc.exceptions.InvalidChannelException;
 import thinirc.message.IrcCommand;
-import thinirc.message.Message;
 import thinirc.message.MyMessage;
 import thinirc.message.MyMessageHeader;
 
 import java.io.IOException;
-import java.sql.Time;
 import java.util.*;
 
 import static thinirc.client.IrcChannelMode.INVITE;

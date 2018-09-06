@@ -276,6 +276,7 @@ public class ChatController implements Initializable {
                         String user = m.getHeader().getParams().split(" ")[0];
                         channel = m.getHeader().getParams().split(" ")[1];
                         if(user.equals(myNickname)){
+//                            TODO: Platform.runlater
                             channels.remove(channel);
                         }else{
                             channels.get(channel).removeUser(user);
