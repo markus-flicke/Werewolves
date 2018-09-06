@@ -245,7 +245,7 @@ public class ChatController implements Initializable {
                         System.out.println(m);
                         String sender = m.getHeader().getRessource().split("!")[0];
                         channel = m.getHeader().getParams();
-//                                asIrcMessageHeaderString().split(" ")[1];
+//                            asIrcMessageHeaderString().split(" ")[1];
                         if(channel.equals(myNickname)){
                             if(!channels.containsKey(channel)){
                                 channels.get(sender).addMessage(new ChannelMessage(channel, m.getPayload()));

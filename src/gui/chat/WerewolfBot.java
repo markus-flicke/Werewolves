@@ -104,12 +104,27 @@ public class WerewolfBot implements WerewolfIOHandler {
                 e.printStackTrace();
             }
         }else if(notification instanceof PhaseConcludedNotification){
-            if(p instanceof SeerNight){
-                ircConnection.removeMode(prefix + "Seer", QUIET);
-            }else if(p instanceof WerewolfNight){
-                ircConnection.removeMode(prefix + "Werewolf", QUIET);
-            }else if(p instanceof Day){
-                ircConnection.removeMode(prefix + "Day", QUIET);
+            try {
+                if (p instanceof SeerNight) {
+                    ircConnection.sendTextToChannel(prefix + "Seer", notification.getMessage());
+                    ircConnection.removeMode(prefix + "Seer", QUIET);
+                } else if (p instanceof WerewolfNight) {
+                    ircConnection.sendTextToChannel(prefix + "Werewolf", notification.getMessage());
+                    ircConnection.removeMode(prefix + "Werewolf", QUIET);
+                    String killedPlayer = ((PhaseConcludedNotification) notification).getPhaseResult().getMessage().split(".")[1].split(" ")[3];
+                    ircConnection.kick("Day", killedPlayer);
+                    ircConnection.kick("Werewolf", killedPlayer);
+                    ircConnection.kick("Seer", killedPlayer);
+                } else if (p instanceof Day) {
+                    ircConnection.sendTextToChannel(prefix + "Day", notification.getMessage());
+                    ircConnection.removeMode(prefix + "Day", QUIET);
+                    String killedPlayer = ((PhaseConcludedNotification) notification).getPhaseResult().getMessage().split(".")[1].split(" ")[3];
+                    ircConnection.kick("Day", killedPlayer);
+                    ircConnection.kick("Werewolf", killedPlayer);
+                    ircConnection.kick("Seer", killedPlayer);
+                }
+            }catch(Exception e){
+                e.printStackTrace();
             }
         }
     }
