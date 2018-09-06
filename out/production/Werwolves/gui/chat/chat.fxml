@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="gui.chat.ChatController" stylesheets="@chat.css" styleClass="root">
+	<MenuBar>
+		<menus>
+			<Menu
+				mnemonicParsing="false"
+				text="File">
+				<items>
+					<MenuItem
+						fx:id="exit"
+						text="Exit"
+						mnemonicParsing="false"
+						onAction="#exit"/>
+				</items>
+			</Menu>
+		</menus>
+	</MenuBar>
+	<BorderPane>
+		<left>
+			<VBox styleClass="channels">
+				<HBox minHeight="61" maxHeight="61" styleClass="channelsToolbar">
+					<TextField fx:id="channelInput"/>
+					<Button fx:id="channelAddButton" text="+" prefHeight="53" prefWidth="53" onAction="#addChannel"/>
+				</HBox>
+				<ListView fx:id="channelListView" VBox.vgrow="ALWAYS"/>
+			</VBox>
+		</left>
+		<center>
+			<TabPane>
+				<Tab text="Chat" closable="false">
+					<VBox HBox.hgrow="ALWAYS">
+						<Label fx:id="channelTopic" minHeight="30" maxHeight="30"/>
+						<HBox styleClass="chatWindow" VBox.vgrow="ALWAYS">
+							<ListView fx:id="channelMessagesView" HBox.hgrow="ALWAYS"/>
+							<ListView fx:id="userView" maxWidth="150"/>
+						</HBox>
+						<HBox minHeight="30" maxHeight="30">
+                            <ListView fx:id="wordList" onMouseClicked="#lvMouseClick"/>
+						</HBox>
+						<HBox minHeight="30" maxHeight="30">
+							<TextField fx:id="textInput" HBox.hgrow="ALWAYS" onKeyReleased="#inputKeyTyped"/>
+							<Button fx:id="sendButton" maxWidth="150" text="Send" onAction="#send"/>
+						</HBox>
+					</VBox>
+				</Tab>
+				<Tab text="Analysis" closable="false">
+					<BarChart fx:id="wordCountHistogram">
+						<xAxis>
+							<CategoryAxis label="Words"/>
+						</xAxis>
+						<yAxis>
+							<NumberAxis label="Counts"/>
+						</yAxis>
+					</BarChart>
+				</Tab>
+
+			</TabPane>
+		</center>
+	</BorderPane>
+</VBox>

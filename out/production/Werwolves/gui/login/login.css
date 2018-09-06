@@ -1,0 +1,12 @@
+.root {
+    -fx-background-color: white;
+}
+
+.root Separator {
+    -fx-background-color: aliceblue;
+    -fx-background-insets: 0,1,2,0;
+}
+
+.root .error {
+    -fx-text-fill: red;
+}
