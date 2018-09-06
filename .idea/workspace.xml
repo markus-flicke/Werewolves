@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a19017b-1455-4816-9976-36859a1fdce0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Werwolves/gui/chat/WerewolfBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Werwolves/gui/chat/WerewolfBot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Poll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Poll.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/chat/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/chat/ChatController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/chat/MsgFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/chat/MsgFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/chat/WerewolfBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/chat/WerewolfBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/chat/models/Channel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/chat/models/Channel.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,86 +19,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WerewolfBot.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WerewolfBot.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gui/chat/WerewolfBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="123" column="61" lean-forward="true" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
+            <state relative-caret-position="162">
+              <caret line="163" selection-start-line="163" selection-end-line="163" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5303#5304#0" expanded="true" />
-                <element signature="e#5331#5332#0" expanded="true" />
+                <element signature="e#6337#6338#0" expanded="true" />
+                <element signature="e#6365#6366#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VoteFailedResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/phases/result/VoteFailedResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerKilledResult.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/phases/result/PlayerKilledResult.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChatController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gui/chat/ChatController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="254" column="25" lean-forward="true" selection-start-line="254" selection-start-column="25" selection-end-line="254" selection-end-column="25" />
-              <folding>
-                <element signature="e#11980#11981#0" expanded="true" />
-                <element signature="e#12047#12048#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/thinirc/message/MyMessage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MsgFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gui/chat/MsgFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Day.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/phases/Day.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="53" column="23" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -114,8 +44,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PlayerStatus</find>
-      <find>revealPlayerAlignment</find>
       <find>preparePoll</find>
       <find>getVotedPlayer</find>
       <find>iscon</find>
@@ -137,13 +65,15 @@
       <find>MsgReceiver</find>
       <find>handleIrcConnection</find>
       <find>PhasePreparedNotification</find>
-      <find>send</find>
       <find>joinChannel</find>
       <find>playersInChannel</find>
       <find>votes</find>
       <find>WereWolf</find>
       <find>initialiseVoting</find>
       <find>PlayerKilled</find>
+      <find>register</find>
+      <find>sendTextToChannel</find>
+      <find>send</find>
     </findStrings>
     <replaceStrings>
       <replace>Werewolf</replace>
@@ -167,19 +97,19 @@
         <option value="$PROJECT_DIR$/src/test/game/GameTest.java" />
         <option value="$PROJECT_DIR$/test/game/GameTest.java" />
         <option value="$PROJECT_DIR$/src/phases/Day.java" />
-        <option value="$PROJECT_DIR$/src/phases/WerewolfNight.java" />
         <option value="$PROJECT_DIR$/src/phases/result/PlayerRevealedResult.java" />
         <option value="$PROJECT_DIR$/src/game/DefaultGameBuilder.java" />
-        <option value="$PROJECT_DIR$/src/game/Poll.java" />
         <option value="$PROJECT_DIR$/test/game/DefaultGameBuilderTest.java" />
         <option value="$PROJECT_DIR$/src/phases/SeerNight.java" />
-        <option value="$PROJECT_DIR$/src/gui/chat/models/Channel.java" />
         <option value="$PROJECT_DIR$/src/gui/chat/WerwolfBot.java" />
         <option value="$PROJECT_DIR$/src/thinirc/client/MyThinIrcConnection.java" />
         <option value="$PROJECT_DIR$/src/game/Game.java" />
-        <option value="$PROJECT_DIR$/src/gui/chat/MsgFilter.java" />
+        <option value="$PROJECT_DIR$/src/phases/WerewolfNight.java" />
+        <option value="$PROJECT_DIR$/src/game/Poll.java" />
         <option value="$PROJECT_DIR$/src/gui/chat/WerewolfBot.java" />
+        <option value="$PROJECT_DIR$/src/gui/chat/models/Channel.java" />
         <option value="$PROJECT_DIR$/src/gui/chat/ChatController.java" />
+        <option value="$PROJECT_DIR$/src/gui/chat/MsgFilter.java" />
       </list>
     </option>
   </component>
@@ -205,38 +135,6 @@
               <item name="Werwolves" type="b2602c69:ProjectViewProjectNode" />
               <item name="Werwolves" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Werwolves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Werwolves" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Werwolves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Werwolves" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Werwolves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Werwolves" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gui" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Werwolves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Werwolves" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Werwolves" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Werwolves" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="phases" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -414,8 +312,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.WerewolfBot" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.gui in Werwolves" />
         <item itemvalue="JUnit.GameTest.testGameTownieWin" />
         <item itemvalue="JUnit.DefaultGameBuilderTest.testValidPlayercount" />
@@ -469,6 +367,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -478,7 +377,7 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3514151" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3514151" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -502,27 +401,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/gui/chat/ChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2925">
-          <caret line="230" column="27" selection-start-line="230" selection-start-column="27" selection-end-line="230" selection-end-column="27" />
-          <folding>
-            <element signature="e#11980#11981#0" expanded="true" />
-            <element signature="e#12047#12048#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/chat/MsgFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/thinirc/MsgSender.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -550,8 +428,8 @@
           <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5303#5304#0" expanded="true" />
-            <element signature="e#5331#5332#0" expanded="true" />
+            <element signature="e#6337#6338#0" expanded="true" />
+            <element signature="e#6365#6366#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -637,6 +515,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -675,20 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/phases/WerewolfNight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/Poll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="42" column="65" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/roles/Seer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -700,13 +568,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="446">
           <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/chat/models/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="26" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -819,24 +683,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/thinirc/client/MyThinIrcConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="181" column="32" lean-forward="true" selection-start-line="181" selection-start-column="32" selection-end-line="181" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/thinirc/message/MyMessage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -861,35 +711,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/thinirc/client/MyConnectionBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/chat/MsgFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="24" column="79" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
+        <state relative-caret-position="243">
+          <caret line="26" column="59" lean-forward="true" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gui/chat/WerewolfBot.java">
+    <entry file="file://$PROJECT_DIR$/src/gui/chat/models/ChannelMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="123" column="61" lean-forward="true" selection-start-line="123" selection-start-column="61" selection-end-line="123" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5303#5304#0" expanded="true" />
-            <element signature="e#5331#5332#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-295">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/chat/models/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/thinirc/client/MyThinIrcConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="164" column="97" lean-forward="true" selection-start-line="164" selection-start-column="97" selection-end-line="164" selection-end-column="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gui/chat/ChatController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="254" column="25" lean-forward="true" selection-start-line="254" selection-start-column="25" selection-end-line="254" selection-end-column="25" />
+        <state relative-caret-position="320">
+          <caret line="325" column="41" lean-forward="true" selection-start-line="325" selection-start-column="41" selection-end-line="325" selection-end-column="41" />
           <folding>
-            <element signature="e#11980#11981#0" expanded="true" />
-            <element signature="e#12047#12048#0" expanded="true" />
+            <element signature="e#12585#12586#0" expanded="true" />
+            <element signature="e#12652#12653#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/Poll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="27" column="81" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/phases/WerewolfNight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gui/chat/WerewolfBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="163" selection-start-line="163" selection-end-line="163" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6337#6338#0" expanded="true" />
+            <element signature="e#6365#6366#0" expanded="true" />
           </folding>
         </state>
       </provider>

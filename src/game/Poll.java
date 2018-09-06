@@ -25,6 +25,7 @@ public class Poll {
 	public void registerVote(Player voter, Player target) {
 		if (voters.contains(voter) && nominees.contains(target)) {
 			votes.add(new Vote(voter, target));
+			System.out.println("Vote registered: voter: " + voter + " target: " + target);
 		}
 	}
 	

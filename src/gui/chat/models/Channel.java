@@ -58,7 +58,6 @@ public class Channel implements Comparable<Channel> {
      */
     public void addMessage(ChannelMessage message) {
         this.messages.add(message);
-
         countWords(message);
     }
 

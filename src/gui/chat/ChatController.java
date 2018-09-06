@@ -282,11 +282,10 @@ public class ChatController implements Initializable {
                         }
                         break;
                     case INVITE:
-                        System.out.println("Params: " + m.getHeader().getParams());
-                        System.out.println("Resource: " + m.getHeader().getRessource());
-                        System.out.println("Payload: " + m.getPayload());
+                        System.out.println(m);
                         user = m.getHeader().getParams().split(" ")[0];
                         channel = "#" + m.getPayload().replace(".", "").split("#")[1];
+                        System.out.println("channel" + channel);
                         if(user.equals(myNickname)){
                             channels.put(channel, new Channel(channel));
                         }
@@ -327,7 +326,7 @@ public class ChatController implements Initializable {
             if(text.equals(":sendPoem")){
                 sendPoem();
             }else{
-                ircConnection.get().sendTextToChannel(channel,text);
+                ircConnection.get().sendTextToChannel(channel, text);
                 channels.get(channel).addMessage(new ChannelMessage(myNickname, text));
             }
         }catch(Exception e){

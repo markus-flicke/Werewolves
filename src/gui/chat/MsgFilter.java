@@ -22,7 +22,7 @@ public class MsgFilter implements MsgReceiver{
             switch (m.getHeader().getIrcCommand()){
                 case PRIVMSG:
                     System.out.println(m);
-                    String sender = m.getHeader().getRessource().split("!")[0];
+                    String sender = m.getPayload().split(" !")[0];
                     String nominee = m.getPayload().replace("!vote ", "");
                     werewolfBot.votes.put(sender, nominee);
                 case JOIN:

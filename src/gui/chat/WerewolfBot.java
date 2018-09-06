@@ -118,10 +118,14 @@ public class WerewolfBot implements WerewolfIOHandler {
                 } else if (p instanceof Day) {
                     ircConnection.sendTextToChannel(prefix + "Day", notification.getMessage());
                     ircConnection.removeMode(prefix + "Day", QUIET);
-                    String killedPlayer = ((PhaseConcludedNotification) notification).getPhaseResult().getMessage().split(".")[1].split(" ")[3];
-                    ircConnection.kick("Day", killedPlayer);
-                    ircConnection.kick("Werewolf", killedPlayer);
-                    ircConnection.kick("Seer", killedPlayer);
+                    try{
+                        String killedPlayer = ((PhaseConcludedNotification) notification).getPhaseResult().getMessage().split(".")[1].split(" ")[3];
+                        ircConnection.kick("Day", killedPlayer);
+                        ircConnection.kick("Werewolf", killedPlayer);
+                        ircConnection.kick("Seer", killedPlayer);
+                    }catch(Exception e){
+                        System.out.println("no player killed");
+                    }
                 }
             }catch(Exception e){
                 e.printStackTrace();
